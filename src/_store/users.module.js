@@ -21,7 +21,7 @@ const actions = {
         userService.delete(id)
             .then(
                 user => commit('deleteSuccess', id),
-                error => commit('deleteSuccess', { id, error: error.toString() })
+                error => commit('deleteFailure', { id, error: error.toString() })
             );
     }
 };
