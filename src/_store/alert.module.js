@@ -10,8 +10,8 @@ const actions = {
     error({ commit }, message) {
         commit('error', message);
     },
-    clear({ commit }, message) {
-        commit('success', message);
+    clear({ commit }) {
+        commit('clear');
     }
 };
 
